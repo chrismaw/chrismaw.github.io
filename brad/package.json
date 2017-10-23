@@ -1,0 +1,11 @@
+{
+  "name": "brad",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/chrismaw/brad.git",
+  "author": "cmaw <christophermaw@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "smoothstate": "^0.7.2"
+  }
+}

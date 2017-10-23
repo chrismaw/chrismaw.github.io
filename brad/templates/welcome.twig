@@ -1,0 +1,82 @@
+{% extends 'main.twig' %}
+
+{% block subtitle %}Welcome{% endblock subtitle %}
+
+{% block backgroundUrl %}img/home_background.jpg{% endblock backgroundUrl %}
+
+
+    {% set welcome_selected = true %}
+
+{% block content %}
+    {% if success %}
+        <script> alert('Email was successfully sent!');</script>
+    {% endif %}
+
+    <div id="welcomeWrapper">
+
+        <div class="container" style="height:1px; background: #607d8b; border-bottom: 1px solid #607d8b"></div>
+        <div class="container row mx-auto text-justify text-gray-dark">
+            <br>
+            <div class="col-12 col-md-8">
+                <p align="center" class="lead">Our purpose is to equip believers with a theological foundation so they
+                    can grow in the knowledge of Christ to effectively reach their peers or communities with the
+                    gospel.</p>
+                <p>Serving in college ministry for fifteen years I agree with other prominent evangelical pastors and
+                    leaders that Christians are starving for biblical truth.
+                    Never before in the history of the world have more resources been available yet there are so many
+                    misconceptions about God and the gospel.
+                <blockquote class="blockquote"><strong>What is the result?</strong><br>A watered down gospel,<br>an
+                    easy-believism theology, and<br>a misunderstanding of the doctrine of God.
+                </blockquote>
+                Living in a college town, my ministry focus includes a focus on international college students and young
+                adults. College students come to East Carolina from all over the world.
+                My prayer is that these international students will believe the gospel, become equipped in biblical
+                theology, communicate the foundational doctrines of Christianity effectively,
+                and become trained to use their gifts to effectively reach others in their home countries.</p>
+                <p>In-Depth Studies is also a resource to Christians who want to grow in their theological development
+                    which includes discipleship, speaking opportunities, skype meetings, and writing bible study
+                    material.
+                    In addition, our ministry has partnerships internationally in Canada, Czech Republic, Austria,
+                    Romania, Great Britain, Mexico, and Belarus.
+                    We partner with local churches in these countries to equip pastors, campus ministries, and lay
+                    leaders.
+                    As a result, these churches are effectively reaching their communities, sending missionaries, and
+                    planting churches globally. </p>
+                <p>My prayer for our ministry is the same as Paul’s in Ephesians 3:17-19: <em>that you being rooted and
+                        grounded in love,
+                        may have strength to comprehend with all the saints what is the breadth and length and height
+                        and depth, and to know the love of Christ that surpasses knowledge,
+                        that you may be filled with all the fullness of God.</em></p>
+            </div>
+            <div class="col">
+                <form style="margin: 2px">
+
+                    <div class="" align="center"><h4><span>Subscribe to our mailing list!</span></h4>
+                        <div align="right"><span>* indicates required</span></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="EMAIL">Email Address <span>*</span></label>
+                        <input class="form-control" value="" name="EMAIL" id="mce-EMAIL" type="email">
+                        <small id="emailHelp" class="form-text"><em>We'll never share your email with anyone else.</em>
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <label for="mce-FNAME">First Name </label>
+                        <input class="form-control" value="" name="FNAME" id="mce-FNAME" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="mce-LNAME">Last Name </label>
+                        <input class="form-control" value="" name="LNAME" id="mce-LNAME" type="text">
+                    </div>
+                    <div class="form-group">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+{# empty Twig template #}

@@ -1,0 +1,51 @@
+/*override css here*/
+#navbutton {
+     border: none;
+     width: 100%;
+ }
+#navbutton:active {
+    border: none;
+}
+#navbutton:hover{
+ color: #fff;
+}
+
+.scrolledBG {
+    background-color: rgba(255, 255, 255, 0.9)
+}
+
+#whiteFilter{
+    background-color: rgba(255, 255, 255, 0.5);
+    min-height: 100%;
+}
+
+.display-4{
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+}
+/*html > body.container-fluid > header.text-center.text-white.sticky-top > div.pos-f-t > nav.navbar.navbar-inverse > div.row > div.col.text-white > h1*/
+
+/*WELCOME PAGE*/
+
+#welcomeWrapper {
+
+    margin: auto;
+}
+#welcomeWrapper p {
+    color: black;
+}
+/*DONATIONS PAGE*/
+
+#giveHeadings{
+    font-size: 4vw;
+    margin: 2% 0 2% 0;
+    /*background-color: ;*/
+    /*height: 50px;*/
+    border-radius: .5%;
+    box-shadow: inset 0 0 5px white;
+}
+
+/*gsnlogo:hover{*/
+     /*height: 200%;*/
+ /*}*/

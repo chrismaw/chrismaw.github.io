@@ -1,0 +1,70 @@
+{% extends 'main.twig' %}
+
+{% block subtitle %}Donations{% endblock subtitle %}
+
+{% block backgroundUrl %}img/home_background.jpg{% endblock backgroundUrl %}
+
+{% set donations_selected = true %}
+
+{% block content %}
+    <div class="container text-gray-dark">
+
+        <div class="" style="height:1px; background: #607d8b; border-bottom: 1px solid #607d8b"></div>
+
+        <div id="" class="row"> {# Give Online and Check Section #}
+            <div id="" class="col-md-7 col-12 text-center">
+                <h6 class="" id="giveHeadings"><strong>Click the logo below to give online!</strong></h6>{# Give Online #}
+                <a href="https://globalservicenetwork.org/give/50408002/?view" target="_blank">
+                    <img id="gsnlogo" src="img/gsnlogo.png" style="align-content: center; max-width: 100%; margin: 1% 0 1% 0;"/>
+                </a>
+            </div>
+
+            <div id="" class="col-md-5 col-12"> {# Give Check #}
+                <div>
+                    <h6 align="center" class="" id="giveHeadings"><strong>To give by check:</strong></h6>
+                </div>
+                <div id="" class="row">
+                    <div id="" class="col" style="padding-right: 2px;"><strong>Mail to:</strong>
+                    </div>
+                    <div id="" class="col" style="padding-left: 2px;"Global Service Network>PO Box 1809<br>Apex, NC 27502
+                    </div>
+                </div>
+                <div class="" style="height:1px; background: #000; border-bottom: 1px solid #000"></div>
+                <div id="" class="row">
+                    <div id="" class="col" style="padding-right: 2px;"><strong>Make out to:</strong>
+                    </div>
+                    <div id="" class="col" style="padding-left: 2px;">Global Service Network
+                    </div>
+                </div>
+                <div class="" style="height:1px; background: #000; border-bottom: 1px solid #000"></div>
+                <div id="" class="row">
+                    <div id="" class="col" style="padding-right: 2px;word-wrap: normal"><strong>Note:</strong>
+                    </div>
+                    <div id="" class="col" style="padding-left: 2px;">In <em>notes</em> section, include my name and account number: <strong>50408002</strong>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+
+    </div>
+
+{% endblock content %}
+{% block scripts %}
+    <script type="text/javascript">
+        if ($('body').width() > 960) {
+            $('#resp_l_row').addClass("row");
+            $('#resp_l_col').addClass("col");
+            $('#respRem_l_row').removeClass("row");
+//        $('#resp_remove_col-5').removeClass("col-5");
+//        $('#resp_remove_col').removeClass("col");
+        }
+        else {
+//        $('#resp_l_row').removeClass("row");
+//        $('#resp_l_col').removeClass("col");
+        }
+    </script>
+{% endblock %}
