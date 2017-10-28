@@ -14,6 +14,9 @@ div.row.nav-tabs{
 .nav-link:hover {
     border: 0px;
 }
+a.nav-link strong:hover {
+    color: white;
+}
 #navbutton:active {
      border: 0px;
      width: 100%;
